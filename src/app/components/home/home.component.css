@@ -1,4 +1,4 @@
-  /* home.component.css */
+  /* Para desarrollo */
   .home{
     height: 100vh;
     background-image: url('/images/background.jpg');
@@ -8,6 +8,17 @@
     padding: 2rem 1rem;
     clip-path: ellipse(99% 55% at 51% 45%);
   }
+
+    /* Para produccion */
+/*     .home{
+      height: 100vh;
+      background-image: url('/new-portfolio/assets/images/background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 2rem 1rem;
+      clip-path: ellipse(99% 55% at 51% 45%);
+    } */
 
   .background{
     margin-top: 58px;

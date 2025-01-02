@@ -5,11 +5,11 @@
     "ng": "ng",
     "start": "ng serve",
     "lint": "ng lint",
-    "build": "ng build --prod",
+    "build": "ng build --base-href /new-portfolio/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:new-portfolio": "node dist/new-portfolio/server/server.mjs",
-    "deploy": "ng build --configuration production && npx angular-cli-ghpages --dir=dist/new-portfolio"
+    "deploy": "ng build --configuration production && npx angular-cli-ghpages"
   },
   "private": true,
   "dependencies": {

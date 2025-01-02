@@ -5,11 +5,21 @@ html {
 
   }
 
-  @font-face {
-    font-family: 'Nasalization';
-    src: url('/fonts/Nasalization Rg.otf') format('truetype');
-  }
-
+  
   body {
     font-family: 'Nasalization', sans-serif;
   }
+  
+  
+  /* Para desarrollo */
+  @font-face {
+    font-family: 'Nasalization';
+    src: url('/fonts/Nasalization.otf') format('truetype');
+  }
+
+ /*  Para produccion */
+/*  @font-face {
+  font-family: 'Nasalization';
+  src: url('/new-portfolio/assets/fonts/Nasalization.otf') format('truetype');
+}
+ */
