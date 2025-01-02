@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "/new-portfolio/",
             "outputPath": "dist/new-portfolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -29,7 +30,7 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles_dev.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
@@ -44,6 +45,16 @@
           },
           "configurations": {
             "production": {
+              "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ],
+              "fileReplacements": [ 
+                { 
+                  "replace": "src/environments/environment.ts", 
+                  "with": "src/environments/environments.prod.ts" 
+                }
+              ],
               "budgets": [
                 {
                   "type": "initial",

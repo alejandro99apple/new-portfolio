@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { environment } from '../../../environments/environments.prod';
+
 
 @Component({
   selector: 'app-home',
@@ -7,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
+  base = environment.baseHref
 }

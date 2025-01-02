@@ -14,12 +14,5 @@ html {
   /* Para desarrollo */
   @font-face {
     font-family: 'Nasalization';
-    src: url('/new-portfolio/assets/fonts/Nasalization.otf') format('truetype');
+    src: url('/fonts/Nasalization.otf') format('truetype');
   }
-
- /*  Para produccion */
-/*  @font-face {
-  font-family: 'Nasalization';
-  src: url('/new-portfolio/assets/fonts/Nasalization.otf') format('truetype');
-}
- */
