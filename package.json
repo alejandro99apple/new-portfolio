@@ -1,13 +1,15 @@
 {
   "name": "new-portfolio",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "lint": "ng lint",
+    "build": "ng build --prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:new-portfolio": "node dist/new-portfolio/server/server.mjs"
+    "serve:ssr:new-portfolio": "node dist/new-portfolio/server/server.mjs",
+    "deploy": "ng build --prod && npx gh-pages -d dist/new-portfolio"
   },
   "private": true,
   "dependencies": {
